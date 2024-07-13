@@ -1,0 +1,93 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+body {
+    font-size: 20px;
+    font-style: italic;
+    background-image: url(fundo.png);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    background-color: #ea88a7;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; 
+}
+.secmenu{
+    width: 100%;
+    display: flex;
+    align-items: left;
+}
+#btnmenu {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.726);
+    border: 3px solid #aed6e9;
+    border-radius: 25px;
+    text-align: center;
+    margin-left: auto;
+    line-height: 40px;
+}
+
+/* Estilos do menu lateral */
+.menu {
+    width: 0;
+    height: 100%;
+    background: #f0bdc9;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    top: 0;
+    left: -18%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 20;
+    transition: left 0.8s ease; 
+}
+
+.menu.ativo {
+    left: 0;
+    width: 18%;
+}
+
+/* Estilos dos botões do menu */
+.butoes {
+    width: 90%;
+    height: 20%;
+    background-image: url(chocolat.jpg);
+    background-size: cover;
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nomebtn {
+    width: 95%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
