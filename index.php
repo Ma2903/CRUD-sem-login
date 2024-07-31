@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="theme-dark">
 <head>
     <meta charset="UTF-8">
     <title>Principal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <section>
-            <h1>Feliz Páscoa</h1>
-            <section class="secmenu">
-                <button id="btnmenu" onclick="open_menu()"> Menu </button>
-            </section>
-        </section>
-    </header>
+<nav class="navbar background" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <figure class="image is-96x96">
+        <img class="navbar-item" src="./src/logotipo.png"> </img>
+    </figure>
 
-    <section class="menu" id="menu">
-        <section class="conteudo" id="conteudo">
-            <h1>Menu</h1>
-            <section class="butoes">
-                <section class="nomebtn"><a href="cliente.php">Clientes</a></section>
-            </section>
-            <section class="butoes">
-                <section class="nomebtn"><a href="produtos.php">Produtos</a></section>
-            </section>
-            <section class="butoes">
-                <section class="nomebtn"><a href="vendedores.php">Vendedores</a></section>
-            </section>
-            <section class="butoes">
-                <section class="nomebtn"><a href="vendas.php">Vendas</a></section>
-            </section>
-        </section>
-    </section>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <a class="navbar-item">
+        Sobre Nós
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Menu
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Clientes
+          </a>
+          <a class="navbar-item">
+            Produtos
+          </a>
+          <a class="navbar-item">
+            Vendedores
+          </a>
+          <a class="navbar-item">
+            Vendas
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 
     <script>
         function open_menu() {
